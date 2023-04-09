@@ -41,7 +41,7 @@ init : initialization of variable.<br/>
 set  : Set the value into variable.<br/>
 get  : get value<br/>
 traversal : travel through the values (array, objects) to execute some functionality.
-insert : adding an value at the begging or end or middle of any value (array)
+insert : adding an value at the begging or end or middle of any value (array)<br />
 delete : delete value
 
 
@@ -51,6 +51,6 @@ delete : delete value
 
 Asymptotic notation is mathematical tool that calculate the required time in terms of input size and does not required the execution of code.
 
--> Big-O notation.
--> Omega notation.
--> Theta notation.
+-> Big-O notation. <br />
+-> Omega notation. <br />
+-> Theta notation. <br />
