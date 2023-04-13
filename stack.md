@@ -43,3 +43,80 @@ A stack is a linear data structure in which the insertion of new element and rem
   <dt>Balanced parenthesis stack</dt>
   <dd>This stack is used to check or to ensure the parenthesis are written currently. </dd>
 </dl>
+
+## Implementation of stack
+
+```
+// Creation of stack
+class Stack{
+    constructor(){
+        this.items = []
+    }
+    // adding values into the stack.
+
+    push(element){
+        this.items.push(element)
+    }
+
+    //removing value from the stack
+
+    pop(){
+        if(!this.isEmpty()){
+            return this.items.pop()
+        }
+        console.warn("stack is empty")
+        return;
+    }
+
+    //checking the stack is empty or not
+
+    isEmpty(){
+        return this.items.length === 0
+    }
+
+    // return the size of stack
+
+    size(){
+        return this.items.length
+    }
+
+    // top element of the stack
+
+    peek(){
+        if(!this.isEmpty()){
+        return this.items[this.size() - 1]
+        }
+    }
+
+    //return all the element in a stack
+
+    print(){
+        return [...this.items]
+    }
+}
+```
+
+## how to use the stack ?
+
+```
+// create of stack
+const stack = new Stack()
+
+// adding elements into stack
+stack.push(10)
+
+// stack is empty or not
+console.log(stack.isEmpty())
+
+// length is stack
+console.log(stack.size())
+
+// the top element in the stack
+console.log(stack.peek())
+
+// all the element in a stack
+console.log(stack.print())
+
+// remove element from the stack
+console.log(stack.pop())
+```
