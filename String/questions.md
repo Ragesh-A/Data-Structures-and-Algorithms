@@ -1,11 +1,3 @@
-# String
-
-Sting is sequence of character that represent text. In another word string is collection of character enclosed with single quotes ('') or double quotes ("").
-
-```
-const str = "Hello, world!";
-```
-
 ## Questions
 
 ###  function to check value is classified as a boolean primitive. Return `true` or `false`
@@ -33,4 +25,22 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+```
+
+### check the string palindrome or not
+
+```
+function palindrome(str) {
+
+    var len = str.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
 ```
