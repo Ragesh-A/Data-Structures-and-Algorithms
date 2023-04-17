@@ -35,7 +35,8 @@ class Queue {
   deQueue(){
     const value = this.items[this.front]
     delete this.items[this.front]
-    return this.front++
+    this.front++
+    return value
   }
 
   // the last element of queue
