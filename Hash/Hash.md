@@ -103,3 +103,50 @@ This collision can handle through two method:
     <li>Double probing</li>
   </ul>
 </ul>
+
+## minimization of collision from previous example
+
+```
+class HashTable {
+  constructor(size){
+    this.table = new Array(size)
+    this.size = size
+  }
+  _hash(key){
+    let load_factor = 0
+    for(let i = 0; i < key.length; i++ ){
+      load_factor += key.charCodeAt(i)
+    }
+    return load_factor / this.size
+  }
+  set(key, value){
+    const index = this._hash(key)
+    if(!this.table[index]){
+      this.table[index] = []
+    }
+    this.table[index].push([key, value])
+  }
+  get(key){
+    const index = this._hash(key)
+    if(this.table[index]){
+    const item = this.table[index].find(arr=> arr[0] == key)
+    return item
+    }
+    return undefined 
+  }
+  remove(key){
+    const index = this._hash(key)
+    if(this.table[index]){
+      for(let i = 0; i < this.table[index].length; i++){
+        if(this.table[index][0] === key){
+          this.table[index].splice(i, 1)
+        }
+        if(this.table[index].length === 0){
+          this.table[index] = undefined
+        }
+      }
+    }
+    return undefined
+  }
+}
+```
