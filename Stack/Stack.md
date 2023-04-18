@@ -120,3 +120,47 @@ console.log(stack.print())
 // remove element from the stack
 console.log(stack.pop())
 ```
+
+## implementation of stack using linked list 
+
+```
+class Node{
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class Stack{
+  constructor(){
+    this.top = null
+    this.size = 0
+  }
+
+  push(value){
+    if(!value) return false;
+    const newNode = new Node(value);
+    newNode.next = this.top
+    this.top = newNode
+    this.size++
+  }
+  pop(){
+    if (!this.top) return null;
+    const poppedNode = this.top;
+    this.top = poppedNode.next;
+    poppedNode.next = null;
+    this.size--;
+    return poppedNode.value;
+  }
+  peek(){
+    return this.top;
+  }
+  isEmpty(){
+    return this.size === 0
+  }
+  size(){
+    return this.size
+  }
+
+}
+```

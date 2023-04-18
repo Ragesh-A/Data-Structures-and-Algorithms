@@ -34,7 +34,7 @@ class HashTable{
     for(let i = 0; i< key.length; i++){
       total += key.charCodeAt(i) // it will convert character into numeric
     }
-    return total/ this.size
+    return total % this.size
   }
 
   // set value into table
@@ -113,11 +113,12 @@ class HashTable {
     this.size = size
   }
   _hash(key){
-    let load_factor = 0
+    let prime = 31 // to make less collision
+    let total = 0
     for(let i = 0; i < key.length; i++ ){
-      load_factor += key.charCodeAt(i)
+      total = total * prime + key.charCodeAt(i)
     }
-    return load_factor / this.size
+    return total % this.size
   }
   set(key, value){
     const index = this._hash(key)
