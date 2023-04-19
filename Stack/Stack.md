@@ -121,7 +121,7 @@ console.log(stack.print())
 console.log(stack.pop())
 ```
 
-## implementation of stack using linked list 
+##  implementation of stack using linked list 
 
 ```
 class Node{

@@ -78,3 +78,33 @@ console.log(queue.isEmpty())
 console.log(queue.size())
 console.log(queue.print())
 ```
+
+### implementation of Queue using array
+
+```
+class Queue{
+  constructor(){
+    this.items = []
+  }
+
+  enQueue(value){
+    this.items.push(value)
+  }
+  deQueue(){
+    return this.items.shift()
+  }
+  isEmpty(){
+    return this.items.length === 0
+  }
+  size(){
+    return this.items.length
+  }
+  print(){
+    for(let i = 0; i < this.items.length; i++){
+      console.log(this.items[i])
+    }
+  }
+}
+```
+
+### implementation using linked list
