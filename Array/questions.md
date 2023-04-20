@@ -23,7 +23,7 @@ function bouncer(arr) {
   });
 }
 
-bouncer([7, "ate", "", false, 9]);
+console.log(bouncer([7, "ate", "", false, 9]))
 ```
 
 ### Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.
@@ -36,6 +36,9 @@ function getIndexToIns(arr, num) {
   });
   return arr.indexOf(num);
 }
+
+const arr = [1,2,3,4,6,7]
+console.log(`value will insert ${getIndexToIns(arr, 5)} th position`)
 ```
 
 # Search algorithms
@@ -46,9 +49,10 @@ function getIndexToIns(arr, num) {
 ### Given an array of `n` elements and target element `t`, find the index of `t` in the array. Return `-1` if target element not found
 
 <h3 align="center">Linear search</h3>
+
 ```
 const arr = [1, 7, 8, 92, 3, 4, 5, 6,];
-const t = 10;
+const t = 92;
 function linearSearch(arr, t) {
   for (let i = 0; i <= arr.length; i++) {
     if (arr[i] === t) {
@@ -141,14 +145,14 @@ function insertionSort(arr) {
 
 console.log(insertionSort(arr));
 ```
-<h3 align="center">Quick sort O(n^2)</h3>
+<h3 align="center">Quick sort O(n log n)</h3>
 
 ```
 const arr = [-6, 20, 8, -2, 4];
 
 function quickSort(arr) {
   if (arr.length < 2) {
-    return;
+    return arr;
   }
   let p = arr[arr.length - 1];
   let l = [];

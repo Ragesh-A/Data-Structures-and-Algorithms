@@ -151,3 +151,27 @@ class HashTable {
   }
 }
 ```
+
+### Handle collision
+
+<pre>
+                    Handle collision
+                          |
+                          |
+          ---------------------------------
+         |                                 |
+  Separate chaining               Open addressing
+  (open hashing)                  (closed hashing)
+                                          |
+                                  ---------
+                                  |- Linear probing
+                                  |- Quadratic probing
+                                  |- Double hashing
+</pre>
+
+### Load factor in hashing
+
+Load factor is an important parameter that is used when we wanted to rehash the previous hash function or we wanted to add more element to existing hash table. <br />
+                Total element in hash table <br />
+Load_factor = ------------------------------- <br />
+                  size of hash table <br />

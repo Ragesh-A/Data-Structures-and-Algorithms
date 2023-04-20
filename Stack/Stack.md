@@ -158,7 +158,7 @@ class Stack{
   isEmpty(){
     return this.size === 0
   }
-  size(){
+  getSize(){
     return this.size
   }
 
