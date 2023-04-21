@@ -172,6 +172,8 @@ class HashTable {
 ### Load factor in hashing
 
 Load factor is an important parameter that is used when we wanted to rehash the previous hash function or we wanted to add more element to existing hash table. <br />
+<pre>
                 Total element in hash table <br />
 Load_factor = ------------------------------- <br />
                   size of hash table <br />
+</pre>
