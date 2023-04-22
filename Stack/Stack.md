@@ -91,7 +91,7 @@ class Stack{
     //return all the element in a stack
 
     print(){
-        return this.items
+        console.log(...this.items)
     }
 }
 ```

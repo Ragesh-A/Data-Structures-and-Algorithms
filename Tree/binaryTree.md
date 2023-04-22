@@ -1,7 +1,6 @@
 # Binary Tree
 
-A tree data structure is hierarchical structure that is used to represent and organize data in a way that easy to navigate and search.
-It is a collection of nodes that are connected by edge (edge is the line that represent connection of nodes) and has hierarchical relationship between the nodes. <br />
+ <br />
 
 
 ## Implementation of Binary search tree
@@ -60,6 +59,44 @@ class BinarySearchTree {
       this._insertNode(head.right, node);
     }
   }
+
+  // search the value is exist or not in the binary search tree
+
+  search(root, value){
+    if(!root) return false
+    if(!value) throw "value is missing"
+    if(root.value === value) return true
+    if(root.value < value) return this.search(root.right, value)
+    else return this.search(root.left, value)
+  }
+
+  // Pre-order traversal format like (root, left , right)
+
+  preOrder(node = this.root){
+      if(!node) return;
+      console.log(node.value)
+      this.preOrder(node.left)
+      this.preOrder(node.right)
+  }
+
+  //in-order traversal format like (left , root, right)
+
+  inOrder(node = this.node){
+      if(!node) return;
+      this.inOrder(node.left)
+      console.log(node.value)
+      this.inOrder(node.right)
+  }
+
+  //post-order traversal format like (left , right, root)
+
+  inOrder(node = this.node){
+      if(!node) return;
+      this.inOrder(node.left)
+      console.log(node.value)
+      this.inOrder(node.right)
+  }
+
 }
 
 ```
@@ -75,5 +112,7 @@ BST.insert(3)
 BST.insert(11)
 BST.insert(10)
 BST.insert(12)
-console.log(BST)
+console.log(BST.search(BST.root,11))
+BST.preOrder(BST.root)
+BST.inOrder(BST.root)
 ```
