@@ -2,7 +2,7 @@
 
 ### Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if `func(x)` is `true`. If no element passes the test, return `undefined`.
 
-```
+```js
 function findElement(arr, func){
   return arr.find(num=> func(num))
 }
@@ -14,7 +14,7 @@ console.log(result)
 
 ### Remove all the falsy value from an array
 
-```
+```js
 function bouncer(arr) {
   return arr.filter(ele=> {
     if(ele){
@@ -28,7 +28,7 @@ console.log(bouncer([7, "ate", "", false, 9]))
 
 ### Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.
 
-```
+```js
 function getIndexToIns(arr, num) {
   arr.push(num);
   arr.sort(function(a, b) {
@@ -50,7 +50,7 @@ console.log(`value will insert ${getIndexToIns(arr, 5)} th position`)
 
 <h3 align="center">Linear search</h3>
 
-```
+```js
 const arr = [1, 7, 8, 92, 3, 4, 5, 6,];
 const t = 92;
 function linearSearch(arr, t) {
@@ -67,7 +67,7 @@ console.log(linearSearch(arr, t));
 
 ### Given a sorted array of `n` elements and target element `t`, find the index of `t` in the array. Return `-1` if target element not found
 
-```
+```js
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const t = 5;
 function binarySearch(arr, t) {
@@ -103,7 +103,7 @@ console.log(binarySearch(arr, t));
 
 <h3 align="center">Bubble sort O(n^2)</h3>
 
-```
+```js
 const arr = [-6, 20, 8, -2, 4];
 
 function bubbleSort(arr) {
@@ -124,7 +124,7 @@ console.log(bubbleSort(arr));
 ```
 <h3 align="center">Insertion sort O(n^2)</h3>
 
-```
+```js
 const arr = [-6, 20, 8, -2, 4];
 
 function insertionSort(arr) {
@@ -147,7 +147,7 @@ console.log(insertionSort(arr));
 ```
 <h3 align="center">Quick sort O(n log n)</h3>
 
-```
+```js
 const arr = [-6, 20, 8, -2, 4];
 
 function quickSort(arr) {
@@ -174,7 +174,7 @@ console.log(quickSort(arr));
 
 <h3 align="center">Merge sort O(n log n)</h3>
 
-```
+```js
 const arr = [-6, 20, 8, -2, 4];
 
 function mergeSort(arr) {

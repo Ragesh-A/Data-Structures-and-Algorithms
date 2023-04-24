@@ -40,17 +40,17 @@ There are three types of linked lists:
 
 
 ## creation of linked list in javaScript
-```
+```js
 class LinkedList {
   constructor(head =null){
     this.head = head
   }
 }
-````
+```
 
 ## creation of  node in javaScript
 
-```
+```js
 class Node {
   constructor(data){
     this.data = data,
@@ -62,7 +62,7 @@ class Node {
 
 ## Putting all together 
 
-```
+```js
 // creation of node
 let node1 = new Node(5)
 let node2 = new Node(6)
@@ -83,7 +83,7 @@ console.log(list.head.next.data) // return 6
 
 ## Example of all operations
 
-```
+```js
 class Node {
       constructor(data) {
         this.data = data;

@@ -1,6 +1,6 @@
 ### How to reverse a stack
 
-```
+```js
 // this method is should be inside the stack class 
 reverse() {
   if (this.isEmpty()) return false;

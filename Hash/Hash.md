@@ -20,7 +20,7 @@
 
 ## implementation of hashing
 
-```
+```js
 class HashTable{
   constructor(size){
     this.table = new Array(size);
@@ -106,7 +106,7 @@ This collision can handle through two method:
 
 ## minimization of collision from previous example
 
-```
+```js
 class HashTable {
   constructor(size){
     this.table = new Array(size)
@@ -139,15 +139,16 @@ class HashTable {
     const index = this._hash(key)
     if(this.table[index]){
       for(let i = 0; i < this.table[index].length; i++){
-        if(this.table[index][0] === key){
+        if(this.table[index][i][0] === key){
           this.table[index].splice(i, 1)
+          i--
         }
         if(this.table[index].length === 0){
           this.table[index] = undefined
+          break;
         }
       }
     }
-    return undefined
   }
 }
 ```

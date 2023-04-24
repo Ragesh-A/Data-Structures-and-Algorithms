@@ -46,7 +46,7 @@ A stack is a linear data structure in which the insertion of new element and rem
 
 ## Implementation of stack
 
-```
+```js
 // Creation of stack
 class Stack{
     constructor(){
@@ -98,7 +98,7 @@ class Stack{
 
 ## how to use the stack ?
 
-```
+```js
 // create of stack
 const stack = new Stack()
 
@@ -123,7 +123,7 @@ console.log(stack.pop())
 
 ##  implementation of stack using linked list 
 
-```
+```js
 class Node{
   constructor(value){
     this.value = value;

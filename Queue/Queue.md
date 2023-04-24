@@ -15,7 +15,7 @@ print  <br>
 
 ## Implementation of Queue
 
-```
+```js
 class Queue {
   constructor(){
     this.items = {}
@@ -81,7 +81,7 @@ console.log(queue.print())
 
 ### implementation of Queue using array
 
-```
+```js
 class Queue{
   constructor(){
     this.items = []
