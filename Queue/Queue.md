@@ -7,7 +7,7 @@ In other word, 'A queue to be a list one end and all the additions to the list a
 
 enQueue : add value to the queue. <br>
 deQueue : remove value from the queue. <br>
-*Other common are the operations are : <br>aaaa
+*Other common are the operations are : <br>
 peek <br>
 isEmpty <br>
 size  <br>
@@ -68,7 +68,7 @@ class Queue {
 ## usage of queue 
 
 ```
-const queue = new Queue
+const queue = new Queue()
 
 queue.enQueue(10)
 queue.enQueue(20)

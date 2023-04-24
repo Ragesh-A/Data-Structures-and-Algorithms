@@ -1,5 +1,6 @@
-# Binary Tree
-
+# Binary Search Tree
+ 
+Binary Search tree is a tree data structure, Which has it on property like the left child node has a value less than the parent value and the right child node value is greater then the parent value. This property make efficient search and insert and delete .
  <br />
 
 
@@ -62,7 +63,7 @@ class BinarySearchTree {
 
   // search the value is exist or not in the binary search tree
 
-  search(root, value){
+  contain(root, value){
     if(!root) return false
     if(!value) throw "value is missing"
     if(root.value === value) return true
@@ -112,7 +113,10 @@ BST.insert(3)
 BST.insert(11)
 BST.insert(10)
 BST.insert(12)
-console.log(BST.search(BST.root,11))
+console.log(BST.contain(BST.root,11))
 BST.preOrder(BST.root)
 BST.inOrder(BST.root)
 ```
+
+### type of binary tree on the basis of completion of completion of level
+

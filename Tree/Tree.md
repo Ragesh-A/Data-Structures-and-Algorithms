@@ -8,11 +8,11 @@ It is a collection of nodes that are connected by edge (edge is the line that re
 
 <ol>
   <li>Root node : The top most node is known as root node.</li>
-  <li>Parent node : The node which iis predecessor of a node.</li>
+  <li>Parent node : The node which is predecessor of a node.</li>
   <li>Child node : Node which is successor of a node.</li>
   <li>Siblings : Children of same parent.</li>
   <li>Ancestor : Predecessor of a node to root.</li>
-  <li>Descendant : >successor of a node.</li>
+  <li>Descendant : successor of a node.</li>
   <li>Internal node : The node which have at least one node.</li>
   <li>Leafs / External node : The node which do not have any child node.</li>
   <li>Level of node : count of edge from root to that node.</li>
