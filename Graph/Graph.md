@@ -26,26 +26,26 @@ The graph can be implemented in two ways
 
 It is 2D array of size v * v where v is the number of vertex. Each column and row represent the vertex.
 
-    A   B   C   
-<br />A | 0 | 1 | 0 | <br />
-B | 1 | 0 | 1 | <br />
-C | 0 | 1 | 0 | <br />
+|   | A | B | C |
+|---|---|---|---|
+| A | 0 | 1 | 0 |
+| B | 1 | 0 | 1 |
+| C | 0 | 1 | 0 |
 
 This means the `A` vertex has a connection with `B`. `B` vertex has a connection with `A` and  `c`. And `C` has a connection with `B`.
 
 ## Adjacency list 
 
 This graph is represented as collection of lined list.
-
+<pre>
 list = {
   A : [B],
   B : [A, B],
   C : [B]
 }
-<br />
+</pre>
+
 This also telling the same thing that  `A` vertex has a connection with `B`. `B` vertex has a connection with `A` and  `c`. And `C` has a connection with `B`.
-
-
 
 
 ### Implementation using Adjacency list
@@ -79,26 +79,35 @@ class Graph{
     this.adjacencyList[vertex2].add(vertex1)
   }
 
+  // return
+
+  hasEdge(vertex1, vertex2){
+    return this.adjacencyList[vertex1].has(vertex2)
+  }
+
   // delete the edge between vertex
 
   deleteEdge(vertex1, vertex2){
-    if(this.adjacencyList[vertex1]){
+    if(this.hasEdge(vertex1, vertex2)){
       this.adjacencyList[vertex1].delete(vertex2)
+      this.adjacencyList[vertex2].delete(vertex1)
+      return true
     }
+    return false
   }
 
   // to delete the vertex remove all the edge and delete 
 
   deleteVertex(vertex){
-    for (const item in this.adjacencyList) {
+    for (const item of this.adjacencyList[vertex]) {
       this.deleteEdge(item, vertex)
     }
-    return this.adjacencyList.delete(vertex)
+    return delete this.adjacencyList[vertex]
   }
 
   display(){
     for (const vertex in this.adjacencyList) {
-      console.log(`${vertex} -> ${this.adjacencyList[vertex]}`)
+      console.log(`${vertex} -> ${[...this.adjacencyList[vertex]]}`)
     }
   }
 }
