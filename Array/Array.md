@@ -4,3 +4,8 @@ Array is ordered collection of elements that stored in a contiguous memory locat
 
 ### Complexity Analysis
 
+Accessing an element by index: O(1) <br />
+Inserting an element at the end: O(1) <br />
+Inserting an element at the beginning or middle: O(n) <br />
+Deleting an element: O(n) <br />
+Searching for an element: O(n) <br />
