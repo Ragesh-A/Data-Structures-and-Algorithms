@@ -154,5 +154,3 @@ console.log(BST.contain(BST.root,11))
 BST.preOrder(BST.root)
 BST.inOrder(BST.root)
 ```
-
-### type of binary tree on the basis of completion of completion of level

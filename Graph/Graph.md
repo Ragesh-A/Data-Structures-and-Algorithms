@@ -18,7 +18,7 @@ Graph is a non-linear data structure consist of infinite number od vertex (which
 
 ### implementation of graph
 
-The graph can be implemented in two ways
+The graph can be implemented in two ways <br />
 -> Adjacency matrix <br />
 -> Adjacency list <br />
 
