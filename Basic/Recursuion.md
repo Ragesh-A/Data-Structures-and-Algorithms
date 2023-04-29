@@ -78,3 +78,14 @@ console.log(0)
 let n = 5
 calcFact(n - 1)
 ```
+##### Q5 : print the values of power of `n` up to `t` times
+
+```js
+function Power(n, t) {
+  if (t === 0) return 1;
+  let sum = n * Power(n, t - 1);
+  console.log(sum);
+  return sum;
+}
+Power(3, 5);
+```

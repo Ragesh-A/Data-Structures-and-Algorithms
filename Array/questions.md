@@ -205,3 +205,23 @@ function merge(left, right){
 
 console.log(mergeSort(arr));
 ```
+### flatten the array
+
+```js
+function flat(arr ){
+  let flatten = []
+  const length = arr.length
+  for(let i =0; i < length; i++){
+    if(Array.isArray(arr[i])){
+     flatten = flatten.concat(flat(arr[i]))
+    }else{
+      flatten.push(arr[i])
+    }
+  }
+  return flatten;
+}
+const arr = [1,2,[3,4,5],[6,[7,8,[9]]]]
+const flattened =flat(arr)
+console.log(flattened)
+
+```
