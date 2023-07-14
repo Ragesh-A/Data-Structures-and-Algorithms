@@ -1,6 +1,6 @@
 ## Questions
 
-### Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if `func(x)` is `true`. If no element passes the test, return `undefined`.
+### Create a function that looks through an array `arr` and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if `func(x)` is `true`. If no element passes the test, return `undefined`.
 
 ```js
 function findElement(arr, func){
@@ -12,7 +12,7 @@ const result = findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0 )
 console.log(result)
 ```
 
-### Remove all the falsy value from an array
+### Remove all the falsie value from an array
 
 ```js
 function bouncer(arr) {
@@ -108,7 +108,7 @@ const arr = [-6, 20, 8, -2, 4];
 
 function bubbleSort(arr) {
   for (let j = 0; j < arr.length - 1; j++) {
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = j; i < arr.length - 1 - j; i++) {
       if (arr[i] > arr[i + 1]) {
         let temp = arr[i];
         arr[i] = arr[i + 1];
@@ -179,27 +179,27 @@ const arr = [-6, 20, 8, -2, 4];
 
 function mergeSort(arr) {
     
-    if(arr.length < 2){
-        return arr
-    }
-    
-    let mid = Math.floor(arr.length/2)
-    let left = arr.slice(0, mid)
-    let right = arr.slice(mid)
-    return merge(mergeSort(left),mergeSort(right))
+  if(arr.length < 2){
+      return arr
+  }
+  
+  let mid = Math.floor(arr.length/2)
+  let left = arr.slice(0, mid)
+  let right = arr.slice(mid)
+  return merge(mergeSort(left),mergeSort(right))
 
 }
 
 function merge(left, right){
-    let sorted = []
-    while(left.length && right.length){
-        if(left[0]<=right[0]){
-            sorted.push(left.shift())
-        }else{
-            sorted.push(right.shift())
-        }
-    }
-    return [...sorted,...left,...right]
+  let sorted = []
+  while(left.length && right.length){
+      if(left[0]<=right[0]){
+          sorted.push(left.shift())
+      }else{
+          sorted.push(right.shift())
+      }
+  }
+  return [...sorted,...left,...right]
     
 }
 

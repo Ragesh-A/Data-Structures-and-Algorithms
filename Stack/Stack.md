@@ -6,7 +6,7 @@ A stack is a linear data structure in which the insertion of new element and rem
 
 -> push() complexity of push is O(1).</br>
 -> pop() complexity pop is O(1).</br>
--> top() complexity of top is O(1.)</br>
+-> top() complexity of top is O(1).</br>
 -> isEmpty() complexity of isEmpty is O(1).</br>
 -> size() complexity of size is O(1).</br>
 
@@ -29,7 +29,7 @@ A stack is a linear data structure in which the insertion of new element and rem
     </ul>
   </dd>
   <br>
-  *These two are the main type of stack however there are variation od stack is also there. like :
+  *These two are the main type of stack however there are variation of stack is also there. like :
   <dt>Infix to postfix stack</dt>
   <dd>Used to convert infix expression to postfix expression.</dd>
   <dt>Expression evaluation stack</dt>

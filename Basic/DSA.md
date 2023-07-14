@@ -26,7 +26,7 @@ Algorithm is defined as a process of set of well defined instruction that are ty
 
 ## Complexity Analysis 
 
-Complexity analysis is a process of evaluating the performance of an algorithm in terms if amount of resources it requires to solve a program. These resources can be time or memory or any other measurable factor that can be affect the efficiency of an algorithm. There are teo type of complexity analysis :
+Complexity analysis is a process of evaluating the performance of an algorithm in terms if amount of resources it requires to solve a program. These resources can be time or memory or any other measurable factor that can be affect the efficiency of an algorithm. There are two type of complexity analysis :
 <dl>
   <dl>Time complexity analysis</dl>
   <dd>The time complexity is used to measure the amount of time is required to execute code.</dd>

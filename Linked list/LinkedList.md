@@ -22,7 +22,7 @@ Linked list is a linear data structure similar to array. But the memory allocate
   </dd>
   <dt>Delete</dt>
   <dd>
-    The complexity od deletion have some case like <br />
+    The complexity of deletion have some case like <br />
     -> deletion of head `O(1)T`<br />
     -> deletion of tail : These have another sub case like while we stored the position the complexity will become `O(1)T` otherwise `O(n)T`<br />
     -> deletion of other than head and tail : These have another sub case like while we stored the position the complexity will become `O(1)T` otherwise `O(n)T`<br />
