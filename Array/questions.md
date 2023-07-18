@@ -132,7 +132,10 @@ function insertionSort(arr) {
   for(let i = 1; i < arr.length; i++){
       let NTI = arr[i]
       let j = i - 1;
-      while( j >= 0 && arr[j] > NTI){
+      while( j >= 0 && arr[j] > 
+      
+      
+      ){
           arr[j + 1 ] = arr[j]
           j = j -1
       }
@@ -160,6 +163,7 @@ function quickSort(arr) {
 
   for (let i = 0; i < arr.length - 1; i++) {
     if (arr[i] < p) {
+      
       l.push(arr[i]);
     } else {
       r.push(arr[i]);
