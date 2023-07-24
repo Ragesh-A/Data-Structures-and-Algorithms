@@ -68,7 +68,7 @@ class BinarySearchTree {
     else return this.contain(root.left, value);
   }
 
-  // Pre-order traversal format like (root, left , right)
+  // Pre-order depth first traversal format like (root, left , right)
 
   preOrder(node = this.root) {
     if (!node) return;
@@ -77,7 +77,7 @@ class BinarySearchTree {
     this.preOrder(node.right);
   }
 
-  //in-order traversal format like (left , root, right)
+  //in-order depth first traversal format like (left , root, right)
 
   inOrder(node = this.node) {
     if (!node) return;
@@ -86,7 +86,7 @@ class BinarySearchTree {
     this.inOrder(node.right);
   }
 
-  //post-order traversal format like (left , right, root)
+  //post-order depth first traversal format like (left , right, root)
 
   postOrder(node = this.node) {
     if (!node) return;
@@ -95,22 +95,42 @@ class BinarySearchTree {
     console.log(node.value);
   }
 
+  //Breath first search
+
+  breathFirstSearch() {
+    const queue = []
+    queue.push(this.root)
+    while(queue.length) {
+      const current = queue.shift()
+      console.log(current.value);
+      if(current.left) {
+        queue.push(current.left)
+      }
+      if (current.right) {
+        queue.push(current.right)
+      }
+    }
+  }
+
   min(root = this.root) {
     if (head.left === null) {
       return head.value;
     }
     return this.min(root.left);
   }
+
   max(root = this.root) {
     if (root.right === null) {
       return root.value;
     }
     return this.max(root.right);
   }
+
   delete(value) {
     let root = this._deleteNode(this.root, value);
     console.log(root);
   }
+
   _deleteNode(root, value) {
     if (!root) return root;
     if (value < root.value) {
@@ -153,4 +173,5 @@ BST.insert(12)
 console.log(BST.contain(BST.root,11))
 BST.preOrder(BST.root)
 BST.inOrder(BST.root)
+BST.breathFirstSearch()
 ```

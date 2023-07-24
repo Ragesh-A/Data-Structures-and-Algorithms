@@ -14,7 +14,7 @@ It is a collection of nodes that are connected by edge (edge is the line that re
   <li>Ancestor : Predecessor of a node to root.</li>
   <li>Descendant : successor of a node.</li>
   <li>Internal node : The node which have at least one node.</li>
-  <li>Leafs / External node : The node which do not have any child node.</li>
+  <li>Leaf / External node : The node which do not have any child node.</li>
   <li>Level of node : count of edge from root to that node.</li>
   <li>Subtree : Any node along with descendant.</li>
 </ol>
