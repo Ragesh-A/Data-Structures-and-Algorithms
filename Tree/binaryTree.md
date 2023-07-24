@@ -113,8 +113,8 @@ class BinarySearchTree {
   }
 
   min(root = this.root) {
-    if (head.left === null) {
-      return head.value;
+    if (root.left === null) {
+      return root.value;
     }
     return this.min(root.left);
   }
@@ -127,8 +127,7 @@ class BinarySearchTree {
   }
 
   delete(value) {
-    let root = this._deleteNode(this.root, value);
-    console.log(root);
+    this.root = this._deleteNode(this.root, value);
   }
 
   _deleteNode(root, value) {
@@ -173,5 +172,7 @@ BST.insert(12)
 console.log(BST.contain(BST.root,11))
 BST.preOrder(BST.root)
 BST.inOrder(BST.root)
+BST.breathFirstSearch()
+BST.delete(10)
 BST.breathFirstSearch()
 ```
