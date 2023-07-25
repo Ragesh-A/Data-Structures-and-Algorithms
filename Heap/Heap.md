@@ -6,7 +6,7 @@ Heap is a tree based data structure which the tree is a complete binary tree. Ba
   <dt>Max-heap</dt>
   <dd>The value of root must be greater than all child. And same thing done for its subtree.</dd>
   <dt>Min-heap</dt>
-  <dd>The value of root must be less then all child. And rhe same thing done for its subtree.</dd>
+  <dd>The value of root must be less then all child. And the same thing done for its subtree.</dd>
 </dl>
 
 
