@@ -195,7 +195,7 @@ class Node {
     const list = new LinkedList()
     const a = [1, 2, 3, 4, 5, 6]
 
-    for (let i = 0; index < a.length; i++) {
+    for (let i = 0; i < a.length; i++) {
 
       list.append(a[i])
 
