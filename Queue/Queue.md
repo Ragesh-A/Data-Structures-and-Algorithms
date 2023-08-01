@@ -3,6 +3,13 @@
 A queue is a linear data structure that is open at both ends and the operations are  performed in first in first out (FIFO) order.
 In other word, 'A queue to be a list one end and all the additions to the list are made at one end and all the deletions from the list are made at other end. The element which is first push will delete first.'
 
+## Type of Queue
+
+<li>Input restricted Queue: Input can be taken from one end but deletion can be done from both end.</li>
+<li>Output restricted Queue: Deletion can be taken from one end but insertion can be done both end.</li>
+<li>Double ended Queue: A queue where insertion and deletion can be done from both end.</li>
+<li>Priority Queue: A special type queue where the elements are accessed based on the priority assigned.</li>
+
 ## Operations 
 
 enQueue : add value to the queue. <br>
