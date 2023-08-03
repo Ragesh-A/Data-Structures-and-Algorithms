@@ -41,8 +41,25 @@ It is a collection of nodes that are connected by edge (edge is the line that re
 
 ### Types of tree
 
-<ul>
-  <li>General tree : A general tree data structure has no restriction on the number of nodes. It means that a parent node can have any number of child nodes.</li>
-  <li>Binary search tree : A node of a binary tree can have a maximum of two child nodes.</li>
-  <li>Balanced tree  : If the height of the left sub-tree and the right sub-tree is equal or differs at most by 1, the tree is known as a balanced tree.</li>
-</ul>
+<li>General Tree:  A general tree data structure has no restriction on the number of nodes. It means that a parent node can have any number of child nodes.</li>
+<li>Binary Tree: A node of a binary tree can have a maximum of two child nodes.</li>
+<li>Ternary Tree: A Ternary Tree is a tree data structure in which each node has at most three child nodes, usually distinguished as “left”, “mid” and “right”.
+</li>
+
+### Tree traversal technique
+
+<ol start="1">
+  <li>Depth first search</li>
+  Depth-First Search explores a graph by visiting the deepest nodes first and then backtracking. 
+  <ul>
+    <li>Pre-order traversal: root -> left -> right. O(n)</li>
+    <li>In-order traversal: left -> root -> right. O(n)</li>
+    <li>post-order traversal: left -> right -> root. O(n)</li>
+  </ul>
+  <li>Breath first search</li>
+  Breadth-First Search explores a graph level by level.
+  <ul>
+    <li>Boundary traversal</li>
+    <li>Diagonal traversal</li>
+  </ul>
+</ol>
